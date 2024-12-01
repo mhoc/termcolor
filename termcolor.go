@@ -1,7 +1,5 @@
 package termcolor
 
-import "fmt"
-
 const (
 	CTRL_RESET            = "\033[0m"
 	CTRL_BOLD             = "\033[1m"
@@ -48,70 +46,70 @@ const (
 
 // Black colorizes the provided text as black
 func Black(s string) string {
-	return fmt.Sprintf("%v%s%v", CTRL_FG_BLACK, s, CTRL_RESET)
+	return CTRL_FG_BLACK + s + CTRL_RESET
 }
 
 // Blue colorizes the provided text as blue
 func Blue(s string) string {
-	return fmt.Sprintf("%v%s%v", CTRL_FG_BLUE, s, CTRL_RESET)
+	return CTRL_FG_BLUE + s + CTRL_RESET
 }
 
 // Cyan colorizes the provided text as cyan
 func Cyan(s string) string {
-	return fmt.Sprintf("%v%s%v", CTRL_FG_CYAN, s, CTRL_RESET)
+	return CTRL_FG_CYAN + s + CTRL_RESET
 }
 
 // DarkGray colorizes the provided text as dark gray
 func DarkGray(s string) string {
-	return fmt.Sprintf("%v%s%v", CTRL_FG_DARK_GRAY, s, CTRL_RESET)
+	return CTRL_FG_DARK_GRAY + s + CTRL_RESET
 }
 
 // Green coloorizes the provided text as green
 func Green(s string) string {
-	return fmt.Sprintf("%v%s%v", CTRL_FG_GREEN, s, CTRL_RESET)
+	return CTRL_FG_GREEN + s + CTRL_RESET
 }
 
 // LightCyan colorizes the provided text as light cyan
 func LightCyan(s string) string {
-	return fmt.Sprintf("%v%s%v", CTRL_FG_LIGHT_CYAN, s, CTRL_RESET)
+	return CTRL_FG_LIGHT_CYAN + s + CTRL_RESET
 }
 
 // LightGray colorizes the provided text as light gray
 func LightGray(s string) string {
-	return fmt.Sprintf("%v%s%v", CTRL_FG_LIGHT_GRAY, s, CTRL_RESET)
+	return CTRL_FG_LIGHT_GRAY + s + CTRL_RESET
 }
 
 // Red colorizes the provided text as red
 func LightGreen(s string) string {
-	return fmt.Sprintf("%v%s%v", CTRL_FG_LIGHT_GREEN, s, CTRL_RESET)
+	return CTRL_FG_LIGHT_GREEN + s + CTRL_RESET
 }
 
 // LightMagenta colorizes the provided text as light magenta
 func LightMagenta(s string) string {
-	return fmt.Sprintf("%v%s%v", CTRL_FG_LIGHT_MAGENTA, s, CTRL_RESET)
+	return CTRL_FG_LIGHT_MAGENTA + s + CTRL_RESET
 }
 
 // LightRed colorizes the provided text as light red
 func LightRed(s string) string {
-	return fmt.Sprintf("%v%s%v", CTRL_FG_LIGHT_RED, s, CTRL_RESET)
+	return CTRL_FG_LIGHT_RED + s + CTRL_RESET
 }
 
 // Magenta colorizes the provided text as magenta
 func Magenta(s string) string {
-	return fmt.Sprintf("%v%s%v", CTRL_FG_MAGENTA, s, CTRL_RESET)
+	return CTRL_FG_MAGENTA + s + CTRL_RESET
 }
 
 // Red colorizes the provided text as red
 func Red(s string) string {
-	return fmt.Sprintf("%v%s%v", CTRL_FG_RED, s, CTRL_RESET)
+	return CTRL_FG_RED + s + CTRL_RESET
 }
 
 // White colorizes the provided text as white
 func White(s string) string {
-	return fmt.Sprintf("%v%s%v", CTRL_FG_WHITE, s, CTRL_RESET)
+	return CTRL_FG_WHITE + s + CTRL_RESET
 }
 
 // Yellow colorizes the provided text as yellow
 func Yellow(s string) string {
-	return fmt.Sprintf("%v%s%v", CTRL_FG_YELLOW, s, CTRL_RESET)
+	return CTRL_FG_YELLOW + s + CTRL_RESET
 }
